@@ -1,10 +1,7 @@
 *{
     margin: 0;
 }
-.contener{
-    max-width: 1670px;
-    margin: 0 auto;
-}
+
 body{
     overflow-x: hidden;
 }
