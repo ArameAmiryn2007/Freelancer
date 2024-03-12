@@ -1057,4 +1057,7 @@ body {
 	.nn{
 		display: none;
 	}
+	body{
+		overflow-x: hidden;
+	}
 }
