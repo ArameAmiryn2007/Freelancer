@@ -966,22 +966,22 @@ body {
 		flex-wrap: wrap;
 		width: 50%;
 		position: relative;
-		top: -20px;
+		top: -50px;
 		left:-250px;
 	}
 	.dis-2{
 		flex-wrap: wrap;
 		width: 50%;
 		position: relative;
-		top: -10px;
-		left: -105px;
+		top: -39px;
+		left: -250px;
 	}
 	.dis-3{
 		flex-wrap: wrap;
 		width: 50%;
 		position: relative;
-		top: -43px;
-		left: -105px;
+		top: -76px;
+		left: -250px;
 	}
 	.border-3 img {
 		width: 100%;
@@ -1057,8 +1057,8 @@ body {
 	.nn{
 		display: none;
 	}
+
 	.see-0{
 		display: none;
 	}
-
 }
