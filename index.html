@@ -1,1387 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title>Document</title>
-</head>
-<body>
-<body>
-  <div class="media2">
-   <div class="media">
-    <div class="med-1">
-    <img class="ll" src="https://slidesigma.com/themes/html/foodmart//assets/img/user-1.png">
-    <i class="fa fa-bars"></i>
-    </div>
-    <div class="med-2">
-      <img src="https://slidesigma.com/themes/html/foodmart//assets/img/logo.png">
-    </div>
-    <div class="med-3">
-      <i id="fa1" class="fa fa-map-marker"></i>
-      <i id="faa3" class='fa fa-shopping-bag'></i>
-    </div>
-    </div>
-    <div class="broo2">
-      <p class="broo">Brooklyn,NY</p>
-    </div>
-    <div class="qq1"></div>
-  </div>
-  <div class="filtr">
-    <div class="fil">
-      <p>Brooklyn, NY 10041</p>
-    </div>
-    <div class="fil2">
-      <i class="fa fa-filter"></i>
-      <i class="fa fa-filter"></i>
-    </div>
-  </div>
-  
-    <div class="row">
-       <div class="nav"> 
-        <div>
-            <img src="https://slidesigma.com/themes/html/foodmart//assets/img/logo.png">
-        </div>
-        <div class="icon">
-            <i class="fa fa-map-marker"></i>
-            <p class="broo">Brooklyn,NY</p>
-        </div>
-       </div> 
-       <div class="inp">
-            <i id="fa1" class="fa fa-map-marker"></i>
-            <input type="text" placeholder="    Pizza,Burger,Chinese">
-       </div>
-       <div class="col">
-            <div class="nav2">
-                <i id="faa" class="fa fa-square"></i>
-                <p>Order Now</p>
-            </div>
-            <div>
-            <p id="pages2" class="pag">Pages</p>
-            </div>
-            <div class="nav3">
-                <img class="ll" src="https://slidesigma.com/themes/html/foodmart//assets/img/user-1.png">
-                <p class="Hi">Hi,kate</p>
-            </div>
-            <div class="faa2">
-                <i class="fa fa-bell"></i>
-                <i id="faa3" class='fa fa-shopping-bag'></i>
-            </div>
-       </div>
-    </div>
-   
-    <div id="klk2" class="klk3">
-     
-      <div class="klk">
-        <div class="fon1"> 
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/nav-1.jpg">
-        </div>
-     
-        <div class="nav-con2">
-          <div class="US4">
-            <h3>HOME PAGES</h3>
-            <div class="bo"></div>
-            <div class="Call">
-              <p>Landing Page</p>
-              <p>Home Page 1</p>
-              <p>Home Page 2</p>
-              <p>Home Page 3</p>
-              <p>Home Page 4</p>
-            </div>
+import logo from './logo.svg';
+import './App.css';
+import {useState} from "react"
+import Login from './Login';
+function App() {
+  const [n, setN] = useState(0); 
+  return (
+    <div className="App">
+      <div className="bord">
+        <div className="text">
+          <p>ARIK</p>
+          <p>SERVICES</p>
+          <p>WORK</p>
+          <p>ABOUT</p>
+          <p>BLOG</p>
+          <p>PAGES</p>
+          <p onClick={()=>{
+            setN(1)
+          }}>USER</p>
+          {n?<Login/>:console.log("")}
+          <div className="LET">
+            <p>LET`S TALK</p>
           </div>
-          <div class="US4">
-            <h3>HOME PAGES</h3>
-            <div class="bo"></div>
-            <div class="Call">
-               <p>Blog Grid View</p>     
-              <p>Blog Grid View 2</p>
-              <p>Blog Details</p>
-              <p>Ex Deals</p>
-              <p>About Us</p>
-            </div>  
-          </div>
-          <div class="US4"> 
-            <h3>RELATED PAGES</h3>
-            <div class="bo"></div>
-            <div class="Call">
-              <p>Restaurant</p>     
-              <p>Restaurant 1</p>
-              <p>Restaurant 2</p>
-              <p>Add Restaurant</p>
-              <p>List View</p>
-            </div>
-          </div>
-          <div class="US4">
-            <h3>ADDITIONAL PAGES</h3>  
-             <div class="bo"></div>
-            <div class="Call">
-              <p>Login</p>     
-              <p>Sign-Up</p>
-              <p>Checkout</p>
-              <p>Order Details</p>
-              <p>Geo Locator</p>
-            </div>             
-          </div>
-           <div id="mm3" class="mm22"> 
-            <h1>X</h1>
-           </div>
         </div>
       </div>
-     </div> 
+      <div className="img">
+        <div>
+          <img src="image.png"></img>
+        </div>
+        <div className="text-2">
+          <h1>Web Designer
+            <br></br>& Developer</h1>
 
-    <div class="swiper mySwiper">
-     
-    
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div>
-            <div class="con">
-            <div class="pol">
-              <h1>Increase takeout sales<br> by 50%</h1>
-            </div>
-            <div class="pol2">
-              <p>with the largest delivery platform in the U.S and <br>Canada</p>
-            </div>
-            </div>
-            <div class="img-0">
-            <img src="https://slidesigma.com/themes/html/foodmart//assets/img/about/blog/1920x700/banner-2.jpg">
-            </div>
-          </div>
         </div>
-        <div class="swiper-slide">
-             <div class="nn" >
-              <div>
-                <h1 class="h1">Increase takeout</h1>
-                <h1 class="h2">sales by 50%</h1>
-              </div> 
-              <div class="the">
-                <p>with the largest delivery platform in the U.S </p>
-                <p class="and">and Canada</p>
-              </div>
-              <div class="lea2">
-                <p class="lea">Learm More.</p>
-              </div>
-             </div> 
-             <div>
-                <img class="img-0" src="https://slidesigma.com/themes/html/foodmart//assets/img/about/blog/1920x700/banner-1.jpg"> 
-             </div>        
-        </div>
-        <div class="swiper-slide">
-          <div class="pol4">
-            <div>
-              <h1>Increase takeout</h1>
-              <h1 class="by">sales by 50%</h1>
-            </div>
-            <div class="pol5">
-              <p>with the largest delivery platform in the U.S</p>
-              <P class="and2">and Canada</P>
-            </div>
-          </div>
-          <div>
-            <img class="img-1" src="https://slidesigma.com/themes/html/foodmart//assets/img/about/blog/1920x700/banner-3.jpg">
-          </div>
+        <div className="cont">
+          <p>Premium web design, development, and SEO<br></br> services to help your business stand out.</p>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-     
-      <div class="autoplay-progress">
-        <svg viewBox="0 0 48 48">
-          <circle cx="24" cy="24" r="20"></circle>
-        </svg>
-        <span></span>
+      <div className="images">
+        <img src="Container.svg"></img>
       </div>
-    </div>
-   
-    <div class="iges22">
-      <div class="text2">
-        <h1 class="brow">Browse by cuisine</h1>
-        <p class="color">See all restaurant</p>
-      </div>
-      <div class="images">
-      <i id="ion" class="fa fa-caret-square-o-left"></i> 
-      <div id="img2">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-1.jpg">
-        <p>Italian</p>
-      </div>
-      <div  class="ww1">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-2.jpg">
-        <p >Thai</p>
-      </div>
-      <div  class="ww1">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-3.jpg">
-        <p>Chinese</p>
-      </div>
-      <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-4.jpg">
-        <p>Mexican</p>
-      </div>
-      <div class="ww1">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-5.jpg">
-        <p>Indian</p>
-      </div>
-      <div  class="ww1">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-6.jpg">
-        <p>Lebanese</p>
-      </div>
-      <div  class="ww1">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-7.jpg">
-        <p>Japanese</p>
-      </div>
-      <div  id="img1">
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/125x125/cuisine-8.jpg">
-        <p>American</p>
-      </div>
-      <i id="ion2" class="fa fa-caret-square-o-right"></i>
-      </div>
-    </div>
-    <div class="border"></div>
-  
-   
-    <div class="imges22"> 
-      <div class="see">
-        <div class="text3">
-         <h1>Your previous orders</h1>
-       </div>
-       <div>
-         <p class="all">See all past orders</p>
-       </div>
-      </div> 
-     <div class="imges2">
-      <div class="border2">
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x104/order-1.jpg">
-        </div>
-        <div class="chil">
-          <p>Chilli Chicken Pizza</p>
-          <p class="big">Big Bites, Brooklyn</p>
-        </div>
-        <div class="bac2">
-          <p>Track Order</p>
-        </div>
-      </div>
-      <div class="border2">
-        <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x104/order-2.jpg">
-        </div>
-        <div class="chil">
-          <p>Hakka Noodles</p>
-          <p class="big">Flavor Town, Brooklyn</p>
-        </div>
-        <div class="bac2">
-          <p>Track Order</p>
-        </div>
-      </div>
-      <div class="border2">
-        <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x104/order-3.jpg">
-        </div>
-        <div class="chil">
-          <p>Vegan Burger</p>
-          <p class="big">Great Burger, Brooklyn</p>
-        </div>
-        <div class="bac2">
-          <p>Track Order</p>
-        </div>
-      </div>
-      <div class="border2">
-        <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x104/order-4.jpg">
-        </div>
-        <div class="chil">
-          <p>Sticky Date Cake</p>
-          <p class="big">Smile N’ Delight, Brooklyn</p>
-        </div>
-        <div class="bac2">
-          <p>Track Order</p>
-        </div>
-      </div>
-     </div> 
-    </div>
-    <div class="h2-h2">
-      <h1>Explore our collections</h1>
-    </div>
-    <div class="imges3">
-      <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/540x300/collection-1.jpg">
-        <p class="rela">Top rater</p>
-      </div>
-      <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/540x300/collection-2.jpg">
-        <p class="rela">Top rater</p>
-      </div>
-    </div>
-    <div class="imges4">
-      <div class="non">
-        <div class="non2">
-          <h3>Most popular near you</h3>
-        </div>
-        <img  src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x587/Banner-12.jpg">
-        <div class="non3">
-          <h4>See all</h4>
-        </div>
-      </div>
-      <div class="dis">
-        <div class="border-3">
-            <div class="col-1">
-              <i class="fa fa-heart-o"></i>
-            </div>
-             <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-23.jpg">
-          <div class="posit">   
-             <div class="col-0">
-              <p>10%</p>
-             </div>
-             <div class="grea">             
-                <p class="gg">Great Burger</p>
-                <p class="text-1">3.1</p>
-             </div>
-             <div class="ame">
-              <p>American, Fast Food</p>
-             </div>
-             <div class="min">
-              <p>30-40 min</p>
-              <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-             </div>
-             <div class="rat">
-              <p>$10 min</p>
-              <p>4225 ratings</p>
-             </div>
-            
-            </div> 
-        </div>
-        <div class="border-3">
-          <div class="col-1">
-            <i class="fa fa-heart-o"></i>
-          </div>
-          <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-2.jpg">
-          <div class="posit2">   
-            <div class="grea">             
-               <p class="gg">Flavor Town</p>
-               <p class="text-2">2.1</p>
-            </div>
-            <div class="ame">
-             <p>Breakfast, Lunch & Dinner</p>
-            </div>
-            <div class="min">
-             <p>30-40 min</p>
-             <div>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star"></span>
-               <span class="fa fa-star"></span>
-             </div>
-            </div>
-            <div class="rat">
-             <p>$10 min</p>
-             <p>4225 rating</p>
-            </div>
-           
-           </div> 
-        </div>
-        <div class="border-3">
-          <div class="col-1">
-            <i class="fa fa-heart-o"></i>
-          </div>
-          <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-3.jpg">
-          <div class="posit">   
-            <div class="col-01">
-             <p>Trending</p>
-            </div>
-            <div class="grea">             
-               <p class="gg">Big Bites</p>
-               <p class="text-3">4.5</p>
-            </div>
-            <div class="ame">
-             <p>Pizzas, Fast Food</p>
-            </div>
-            <div class="min">
-             <p>30-40 min</p>
-             <div>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star"></span>
-               <span class="fa fa-star"></span>
-             </div>
-            </div>
-            <div class="rat">
-             <p>$10 min</p>
-             <p>4225 ratings</p>
-            </div>
-           
-            </div>
-           </div> 
-           <div class="border-3">
-            <div class="col-1">
-              <i class="fa fa-heart-o"></i>
-            </div>
-            <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-4.jpg">
-            <div class="posit">   
-              <div class="col-01">
-               <p>Trending</p>
-              </div>
-              <div class="grea">             
-                 <p class="gg">Smile N’ Delight</p>
-                 <p class="text-3">4.5</p>
-              </div>
-              <div class="ame">
-               <p>Desserts, Beverages</p>
-              </div>
-              <div class="min">
-               <p>30-40 min</p>
-               <div>
-                 <span class="fa fa-star checked"></span>
-                 <span class="fa fa-star checked"></span>
-                 <span class="fa fa-star checked"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-               </div>
-              </div>
-              <div class="rat">
-               <p>$10 min</p>
-               <p>4225 ratings</p>
-              </div>
-        </div>
-      </div>
-      <div class="border-3">
-        <div class="col-1">
-          <i class="fa fa-heart-o"></i>
-        </div>
-        <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-5.jpg">
-        <div class="posit">   
-          <div class="col-0">
-            <p>10%</p>
-           </div>
-          <div class="grea">             
-             <p class="gg">Lil Johnny’s</p>
-             <p class="text-4">2.1</p>
-          </div>
-          <div class="ame">
-           <p>Continental & Mexican</p>
-          </div>
-          <div class="min">
-           <p>30-40 min</p>
-           <div>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>
-             <span class="fa fa-star"></span>
-           </div>
-          </div>
-          <div class="rat">
-           <p>$10 min</p>
-           <p>4225 ratings</p>
-          </div>
-    </div>
-  </div>
-  <div class="border-3">
-    <div class="col-1">
-      <i class="fa fa-heart-o"></i>
-    </div>
-    <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-6.jpg">
-    <div class="posit">   
-      <div class="col-02">
-       <p>NEW</p>
-      </div>
-      <div class="grea">             
-         <p class="gg">Choice Foods</p>
-         <p class="text-3">4.5</p>
-      </div>
-      <div class="ame">
-       <p>Indian, Chinese, Tandoor</p>
-      </div>
-      <div class="min">
-       <p>30-40 min</p>
-       <div>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star"></span>
-         <span class="fa fa-star"></span>
-       </div>
-      </div>
-      <div class="rat">
-       <p>$10 min</p>
-       <p>4225 ratings</p>
-      </div>
-</div>
-</div>
-    </div>
-    </div>
-    
-    <div class="imge2131">
-      <div class="bon">
-        <div class="unl">
-        <div>
-          <h2>Unlimited Free Delivery with.</h2>
-        </div>
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/tag.jpg">
-        </div>
-        <div>
-          <h4>Try 30 Days FREE</h4>
-        </div>
-       </div> 
-        
-      </div>
-      </div>
-      <div class="imges4">
-       <div class="dis-2">
-        <div class="border-3">
-          <div class="col-1">
-            <i class="fa fa-heart-o"></i>
-          </div>
-           <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-7.jpg">
-        <div class="posit">   
-           <div class="col-0">
-            <p>10%</p>
-           </div>
-           <div class="grea">             
-              <p class="gg">Great Burger</p>
-              <p class="text-1">3.1</p>
-           </div>
-           <div class="ame">
-            <p>American, Fast Food</p>
-           </div>
-           <div class="min">
-            <p>30-40 min</p>
-            <div>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-           </div>
-           <div class="rat">
-            <p>$10 min</p>
-            <p>4225 ratings</p>
-           </div>
-         
-          </div> 
-      </div>
-      <div class="border-3">
-        <div class="col-1">
-          <i class="fa fa-heart-o"></i>
-        </div>
-        <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-8.jpg">
-        <div class="posit2">   
-          <div class="grea">             
-             <p class="gg">Flavor Town</p>
-             <p class="text-2">2.1</p>
-          </div>
-          <div class="ame">
-           <p>Breakfast, Lunch & Dinner</p>
-          </div>
-          <div class="min">
-           <p>30-40 min</p>
-           <div>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>
-             <span class="fa fa-star"></span>
-           </div>
-          </div>
-          <div class="rat">
-           <p>$10 min</p>
-           <p>4225 rating</p>
-          </div>
-          
-         </div> 
-      </div>
-    <div class="border-3">
-      <div class="col-1">
-        <i class="fa fa-heart-o"></i>
-      </div>
-       <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-9.jpg">
-    <div class="posit">   
-      <div class="col-01">
-        <p>Trending</p>
-       </div>
-       <div class="grea">             
-          <p class="gg">Great Burger</p>
-          <p class="text-3">4.5</p>
-       </div>
-       <div class="ame">
-        <p>American, Fast Food</p>
-       </div>
-       <div class="min">
-        <p>30-40 min</p>
-        <div>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </div>
-       </div>
-       <div class="rat">
-        <p>$10 min</p>
-        <p>4225 ratings</p>
-       </div>
-      
-      </div> 
-  </div>
-  <div class="border-3">
-    <div class="col-1">
-      <i class="fa fa-heart-o"></i>
-    </div>
-     <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-10.jpg">
-  <div class="posit">   
-    <div class="col-01">
-      <p>Trending</p>
-     </div>
-     <div class="grea">             
-        <p class="gg">Great Burger</p>
-        <p class="text-3">4.5</p>
-     </div>
-     <div class="ame">
-      <p>American, Fast Food</p>
-     </div>
-     <div class="min">
-      <p>30-40 min</p>
-      <div>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </div>
-     </div>
-     <div class="rat">
-      <p>$10 min</p>
-      <p>4225 ratings</p>
-     </div>
-    
-    </div> 
-</div>
-<div class="border-3">
-  <div class="col-1">
-    <i class="fa fa-heart-o"></i>
-  </div>
-   <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-24.jpg">
-<div class="posit">   
-   <div class="col-0">
-    <p>20%</p>
-   </div>
-   <div class="grea">             
-      <p class="gg">Great Burger</p>
-      <p class="text-2">2.1</p>
-   </div>
-   <div class="ame">
-    <p>American, Fast Food</p>
-   </div>
-   <div class="min">
-    <p>30-40 min</p>
-    <div>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-    </div>
-   </div>
-   <div class="rat">
-    <p>$10 min</p>
-    <p>4225 ratings</p>
-   </div>
-   
-  </div> 
-</div>
-<div class="border-3">
-  <div class="col-1">
-    <i class="fa fa-heart-o"></i>
-  </div>
-   <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-23.jpg">
-<div class="posit">   
-  <div class="col-02">
-    <p>NEW</p>
-   </div>
-   <div class="grea">             
-      <p class="gg">Great Burger</p>
-      <p class="text-1">3.1</p>
-   </div>
-   <div class="ame">
-    <p>American, Fast Food</p>
-   </div>
-   <div class="min">
-    <p>30-40 min</p>
-    <div>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-    </div>
-   </div>
-   <div class="rat">
-    <p>$10 min</p>
-    <p>4225 ratings</p>
-   </div>
-  
-  </div> 
-</div>
-      </div> 
-      <div class="see-0">
-        <div>
-          <div class="non2">
-            <h3>Most popular near you</h3>
-          </div>
-          <img  src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x587/Banner-1.jpg">
-          <div class="non3">
-            <h4>See all</h4>
-          </div>
-        </div>
-      </div>
-      </div>
- 
-      <div class="bon-2">
-        <div class="unl">
-        <div>
-          <h2>Unlimited Free Delivery with.</h2>
-        </div>
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/tag.jpg">
-        </div>
-        <div>
-          <h4>Try 30 Days FREE</h4>
-        </div>
-       </div> 
-      </div>
-      
-       <div class="imges4">
-      <div class="non">
-        <div class="non2">
-          <h3>Most popular near you</h3>
-        </div>
-        <img  src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x587/Banner-2.jpg">
-        <div class="non3">
-          <h4>See all</h4>
-        </div>
-      </div>
-      <div class="dis">
-        <div class="border-3">
-            <div class="col-1">
-              <i class="fa fa-heart-o"></i>
-            </div>
-             <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-25.jpg">
-          <div class="posit">   
-             <div class="col-0">
-              <p>10%</p>
-             </div>
-             <div class="grea">             
-                <p class="gg">Great Burger</p>
-                <p class="text-1">3.1</p>
-             </div>
-             <div class="ame">
-              <p>American, Fast Food</p>
-             </div>
-             <div class="min">
-              <p>30-40 min</p>
-              <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-             </div>
-             <div class="rat">
-              <p>$10 min</p>
-              <p>4225 ratings</p>
-             </div>
-            
-            </div> 
-        </div>
-        <div class="border-3">
-          <div class="col-1">
-            <i class="fa fa-heart-o"></i>
-          </div>
-          <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-26.jpg">
-          <div class="posit2">   
-            <div class="grea">             
-               <p class="gg">Flavor Town</p>
-               <p class="text-2">2.1</p>
-            </div>
-            <div class="ame">
-             <p>Breakfast, Lunch & Dinner</p>
-            </div>
-            <div class="min">
-             <p>30-40 min</p>
-             <div>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star"></span>
-               <span class="fa fa-star"></span>
-             </div>
-            </div>
-            <div class="rat">
-             <p>$10 min</p>
-             <p>4225 rating</p>
-            </div>
-            
-           </div> 
-        </div>
-        <div class="border-3">
-          <div class="col-1">
-            <i class="fa fa-heart-o"></i>
-          </div>
-          <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-27.jpg">
-          <div class="posit">   
-            <div class="col-01">
-             <p>Trending</p>
-            </div>
-            <div class="grea">             
-               <p class="gg">Big Bites</p>
-               <p class="text-3">4.5</p>
-            </div>
-            <div class="ame">
-             <p>Pizzas, Fast Food</p>
-            </div>
-            <div class="min">
-             <p>30-40 min</p>
-             <div>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star checked"></span>
-               <span class="fa fa-star"></span>
-               <span class="fa fa-star"></span>
-             </div>
-            </div>
-            <div class="rat">
-             <p>$10 min</p>
-             <p>4225 ratings</p>
-            </div>
-          
-            </div>
-           </div> 
-           <div class="border-3">
-            <div class="col-1">
-              <i class="fa fa-heart-o"></i>
-            </div>
-            <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-28.jpg">
-            <div class="posit">   
-              <div class="col-01">
-               <p>Trending</p>
-              </div>
-              <div class="grea">             
-                 <p class="gg">Smile N’ Delight</p>
-                 <p class="text-3">4.5</p>
-              </div>
-              <div class="ame">
-               <p>Desserts, Beverages</p>
-              </div>
-              <div class="min">
-               <p>30-40 min</p>
-               <div>
-                 <span class="fa fa-star checked"></span>
-                 <span class="fa fa-star checked"></span>
-                 <span class="fa fa-star checked"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-               </div>
-              </div>
-              <div class="rat">
-               <p>$10 min</p>
-               <p>4225 ratings</p>
-              </div>
-        </div>
-      </div>
-      <div class="border-3">
-        <div class="col-1">
-          <i class="fa fa-heart-o"></i>
-        </div>
-        <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-15.jpg">
-        <div class="posit">   
-          <div class="col-0">
-            <p>10%</p>
-           </div>
-          <div class="grea">             
-             <p class="gg">Lil Johnny’s</p>
-             <p class="text-4">2.1</p>
-          </div>
-          <div class="ame">
-           <p>Continental & Mexican</p>
-          </div>
-          <div class="min">
-           <p>30-40 min</p>
-           <div>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>
-             <span class="fa fa-star"></span>
-           </div>
-          </div>
-          <div class="rat">
-           <p>$10 min</p>
-           <p>4225 ratings</p>
-          </div>
-    </div>
-  </div>
-  <div class="border-3">
-    <div class="col-1">
-      <i class="fa fa-heart-o"></i>
-    </div>
-    <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-16.jpg">
-    <div class="posit">   
-      <div class="col-02">
-       <p>NEW</p>
-      </div>
-      <div class="grea">             
-         <p class="gg">Choice Foods</p>
-         <p class="text-3">4.5</p>
-      </div>
-      <div class="ame">
-       <p>Indian, Chinese, Tandoor</p>
-      </div>
-      <div class="min">
-       <p>30-40 min</p>
-       <div>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star"></span>
-         <span class="fa fa-star"></span>
-       </div>
-      </div>
-      <div class="rat">
-       <p>$10 min</p>
-       <p>4225 ratings</p>
-      </div>
-</div>
-</div>
-    </div>
-    </div>
-    
-    <div class="bon-3">
-      <div class="unl">
-      <div>
-        <h2>Unlimited Free Delivery with.</h2>
-      </div>
-      <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/tag.jpg">
-      </div>
-      <div>
-        <h4>Try 30 Days FREE</h4>
-      </div>
-     </div> 
-    </div>
 
-    <div class="imges4">
-      <div class="dis-3">
-       <div class="border-3">
-         <div class="col-1">
-           <i class="fa fa-heart-o"></i>
-         </div>
-          <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-17.jpg">
-       <div class="posit">   
-          <div class="col-0">
-           <p>10%</p>
+     <div className='bacgrund1'>
+      <div className="content-row">
+        <div className="content">
+          <div className="web">
+            <p className="TEXT-01">01</p>
+            <h3 className="design">Web design</h3>
+            <p className="vis">Visually stunning web designs that<br></br> captivate your audience by blending your<br></br> brand voice and customer needs.</p>
           </div>
-          <div class="grea">             
-             <p class="gg">Great Burger</p>
-             <p class="text-1">3.1</p>
+          <div className="row">
+            <div className="redius">
+              <img src="png.svg"></img>
+            </div>
+            <div className="col">
+              <p>About Webdesign</p>
+            </div>
+
           </div>
-          <div class="ame">
-           <p>American, Fast Food</p>
+        </div>
+
+        <div className="content">
+          <div className="web">
+            <p className="TEXT-01">02</p>
+            <h3 className="design">Development</h3>
+            <p className="vis">Get custom web development solutions that<br></br> are tailored to your specifications, designed<br></br> to deliver a flawless user experience.</p>
           </div>
-          <div class="min">
-           <p>30-40 min</p>
-           <div>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>
-             <span class="fa fa-star"></span>
-           </div>
+          <div className="row">
+            <div className="redius">
+              <img src="png.svg"></img>
+            </div>
+            <div className="col3">
+              <p>About Webflow</p>
+            </div>
+
           </div>
-          <div class="rat">
-           <p>$10 min</p>
-           <p>4225 ratings</p>
+        </div>
+
+
+        <div className="content">
+          <div className="web">
+            <p className="TEXT-01">03</p>
+            <h3 className="design">Content & Seo</h3>
+            <p className="vis">Proven SEO strategies that enhance your<br></br> online performance, bringing you to the<br></br> forefront of organic search results.</p>
           </div>
-          <!-- <div class="i1">
-           <div>
-             <img src="foto-js/004-leaf.svg">
-           </div>
-           <div>
-             <img src="foto-js/006-chili.svg">
-           </div>
-           <div>
-             <img src="foto-js/005-chef.svg">
-           </div>
-           <div>
-             <img src="foto-js/008-protein.svg">
-           </div>
-           <div>
-             <img src="foto-js/009-lemon.svg">
-           </div>
-          </div> -->
-         </div> 
-     </div>
-     <div class="border-3">
-       <div class="col-1">
-         <i class="fa fa-heart-o"></i>
-       </div>
-       <img  class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-18.jpg">
-       <div class="posit2">   
-         <div class="grea">             
-            <p class="gg">Flavor Town</p>
-            <p class="text-2">2.1</p>
-         </div>
-         <div class="ame">
-          <p>Breakfast, Lunch & Dinner</p>
-         </div>
-         <div class="min">
-          <p>30-40 min</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+          <div className="row">
+            <div className="redius">
+              <img src="png.svg"></img>
+            </div>
+            <div className="col3">
+              <p>About SEO</p>
+            </div>
+
           </div>
-         </div>
-         <div class="rat">
-          <p>$10 min</p>
-          <p>4225 rating</p>
-         </div>
-         
-        </div> 
-     </div>
-   <div class="border-3">
-     <div class="col-1">
-       <i class="fa fa-heart-o"></i>
-     </div>
-      <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-19.jpg">
-   <div class="posit">   
-     <div class="col-01">
-       <p>Trending</p>
+        </div>
       </div>
-      <div class="grea">             
-         <p class="gg">Big Bites</p>
-         <p class="text-3">4.5</p>
       </div>
-      <div class="ame">
-       <p>Pizzas, Fast Food</p>
+
+     <div className='bacgrund2'>     
+      <div className="images-img">
+        <div className="kontrol">
+          <div className="sel">
+            <h3>Selected Work</h3>
+          </div>
+          <div className="row">
+            <div className="redius">
+              <img src="png.svg"></img>
+            </div>
+            <div className="col3">
+              <p>About SEO</p>
+            </div>
+
+          </div>
+        </div>
+        <div className="images-2">
+          <img src="Grid.png"></img>
+        </div>
       </div>
-      <div class="min">
-       <p>30-40 min</p>
-       <div>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star"></span>
-         <span class="fa fa-star"></span>
-       </div>
+    </div>
+      <div className="border-col">
+        <div className="row-col">
+          <div className="img-0">
+            <img src="image.png"></img>
+          </div>
+          <div className='web-1'>
+            <div>
+              <h3>Web Designer
+                & Developer</h3>
+              <p>3147 Patterson Street, Houston, TX, 77002</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bac">
+          <div className="inp-1">
+            <input type="text" placeholder="Name"></input>
+            <input type="text" placeholder="Last Name"></input>
+          </div>
+          <div className="inp-1">
+            <input type="email" placeholder="email"></input>
+            <input type="password" placeholder="password"></input>
+          </div>
+          <div className="but">
+            <p>add User</p>
+          </div>
+        </div>
       </div>
-      <div class="rat">
-       <p>$10 min</p>
-       <p>4225 ratings</p>
+      <div className="cont-pol">
+        <div className="att-border">
+          <div className="img-png">
+            <img src="img.1.png"></img>
+          </div>
+          <div className="text-p">
+            <div>
+              <p>23rd Aug 2023</p>
+              <h3 className="how">How to Build a Stunning Website<br></br> with Framer</h3>
+              <p className="learn">Learn how to create an impressive website using<br></br> Framer with our step-by-step guide.</p>
+              <p className="bor-p">WEbdesign</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="att-border">
+          <div className="img-png">
+            <img src="img.2.png"></img>
+          </div>
+          <div className="text-p">
+            <div>
+              <p>23rd Aug 2023</p>
+              <h3 className="how">10 website elements for maximum<br></br> user engagement</h3>
+              <p className="learn">10 website elements to engage users, from intuitive<br></br> navigation to compelling visuals.</p>
+              <p className="bor-p">WEbdesign</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="att-border">
+          <div className="img-png">
+            <img src="img.3.png"></img>
+          </div>
+          <div className="text-p">
+            <div>
+              <p>23rd Aug 2023</p>
+              <h3 className="how">The importance of content in driving<br></br> website traffic</h3>
+              <p className="learn">Quality content is king. Learn how to create<br></br> valuable, SEO-optimized content.</p>
+              <p className="bor-p">WEbdesign</p>
+            </div>
+          </div>
+        </div>
       </div>
-     
-     </div> 
- </div>
- <div class="border-3">
-   <div class="col-1">
-     <i class="fa fa-heart-o"></i>
-   </div>
-    <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-20.jpg">
- <div class="posit">   
-   <div class="col-01">
-     <p>Trending</p>
+
+
+      <div className="cont-pol">
+        <div className="att-border">
+          <div className="img-png">
+            <img src="img.4.png"></img>
+          </div>
+          <div className="text-p">
+            <div>
+              <p>23rd Aug 2023</p>
+              <h3 className="how">10 common web development<br></br> mistakes to avoid</h3>
+              <p className="learn">10 common web development mistakes and improve<br></br> your site's functionality and user experience.</p>
+              <p className="bor-p">WEbdesign</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="att-border">
+          <div className="img-png">
+            <img src="img.5.png"></img>
+          </div>
+          <div className="text-p">
+            <div>
+              <p>23rd Aug 2023</p>
+              <h3 className="how">Why responsive web design is critical<br></br> for your business</h3>
+              <p className="learn">Responsive web design ensures your site looks great<br></br> and performs well on all devices.</p>
+              <p className="bor-p">WEbdesign</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="att-border">
+          <div className="img-png">
+            <img src="img.6.png"></img>
+          </div>
+          <div className="text-p">
+            <div>
+              <p>23rd Aug 2023</p>
+              <h3 className="how">The art of SEO writing: How to write<br></br> content that ranks on Google</h3>
+              <p className="learn">Optimize your website with expert tips on writing<br></br> content that ranks high on Google.</p>
+              <p className="bor-p">WEbdesign</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className='row-pol2'>
+            <div className='ll'>
+              <div className='ark'>
+              <h2>Arik Andersson</h2>
+              </div>
+              <div className='img-png2'>
+              <img  src="image.png"></img>
+              </div>
+              <div className='ark'>
+              <h2>Arik Andersson</h2>
+              </div>
+            </div>
+            <div className='that'>
+              <div className='txt-h2'>
+                <h1>A website that leaves<br></br> 
+                a lasting impression!</h1>
+              </div>
+              <div className='txt-p'>
+                <p>Hi, I'm Arik Andersson - a freelancer specializing in premium web<br></br> design, development, and SEO services. I'm passionate about<br></br> creating unique and effective solutions for my clients, and I<br></br> bring a personal touch to<br></br> every project. Let's work together to bring your vision to life!</p>
+            </div>
+        </div>
+      </div>
     </div>
-    <div class="grea">             
-       <p class="gg">Smile N’ Delight</p>
-       <p class="text-3">4.5</p>
-    </div>
-    <div class="ame">
-     <p>Desserts, Beverages</p>
-    </div>
-    <div class="min">
-     <p>30-40 min</p>
-     <div>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-     </div>
-    </div>
-    <div class="rat">
-     <p>$10 min</p>
-     <p>4225 ratings</p>
-    </div>
+  
    
    </div> 
-</div>
-<div class="border-3">
- <div class="col-1">
-   <i class="fa fa-heart-o"></i>
- </div>
-  <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-21.jpg">
-<div class="posit">   
-  <div class="col-0">
-   <p>20%</p>
-  </div>
-  <div class="grea">             
-     <p class="gg">Lil Johnny’s</p>
-     <p class="text-2">2.1</p>
-  </div>
-  <div class="ame">
-   <p>Continental & Mexican</p>
-  </div>
-  <div class="min">
-   <p>30-40 min</p>
-   <div>
-     <span class="fa fa-star checked"></span>
-     <span class="fa fa-star checked"></span>
-     <span class="fa fa-star checked"></span>
-     <span class="fa fa-star"></span>
-     <span class="fa fa-star"></span>
-   </div>
-  </div>
-  <div class="rat">
-   <p>$10 min</p>
-   <p>4225 ratings</p>
-  </div>
-  
- </div> 
-</div>
-<div class="border-3">
- <div class="col-1">
-   <i class="fa fa-heart-o"></i>
- </div>
-  <img class="im" src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x150/shop-22.jpg">
-<div class="posit">   
- <div class="col-02">
-   <p>NEW</p>
-  </div>
-  <div class="grea">             
-     <p class="gg">Choice Foods</p>
-     <p class="text-1">3.1</p>
-  </div>
-  <div class="ame">
-   <p>Indian, Chinese, Tandoor</p>
-  </div>
-  <div class="min">
-   <p>30-40 min</p>
-   <div>
-     <span class="fa fa-star checked"></span>
-     <span class="fa fa-star checked"></span>
-     <span class="fa fa-star checked"></span>
-     <span class="fa fa-star"></span>
-     <span class="fa fa-star"></span>
-   </div>
-  </div>
-  <div class="rat">
-   <p>$10 min</p>
-   <p>4225 ratings</p>
-  </div>
- 
- </div> 
-</div>
-     </div> 
-     <div class="see-0">
-       <div>
-         <div class="non2">
-           <h3>Most popular near you</h3>
-         </div>
-         <img  src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/255x587/Banner-3.jpg">
-         <div class="non3">
-           <h4>See all</h4>
-         </div>
-       </div>
-     </div>
-     </div>
-     <div class="imges-03">
-      <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/540x300/collection-3.jpg">
-        <p class="rela2">Top rated</p>
-      </div>
-      <div>
-        <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/540x300/collection-4.jpg">
-        <p class="rela2">Top rated</p>
-      </div>
-    </div>
-    <div class="bac3">
-      <div class="bac4">
-        <div>
-          <i class="fa fa-diamond"></i>
-          <div>
-            <p>100% Payment</p>
-            <p>Secured</p>
-          </div>
-        </div>
-        <div>
-          <i class="fa fa-diamond"></i>
-          <div>
-            <p> Support lots of</p>
-            <p>Payments</p>       
-          </div>
-        </div>
-        <div>
-          <i class="fa fa-diamond"></i>
-          <div>
-            <p> 24 hours / 7 days</p>
-            <p>Support</p>          
-          </div>
-        </div>
-        <div>
-          <i class="fa fa-diamond"></i>
-          <div>
-            <p>Free Delivery</p>
-            <p>with $50</p>     
-          </div> 
-        </div>
-        <div>
-          <i class="fa fa-diamond"></i>
-          <div>
-             <p>Best Price</p>
-             <p>Guaranteed</p>      
-          </div>      
-        </div>
-        <div>
-          <i class="fa fa-diamond"></i>
-          <div>
-            <p>Mobile Apps</p>
-            <p>Ready</p>
-          </div>           
-        </div>
-      </div>
 
-      <div class="ima">
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-2.jpg">
-        </div>
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-5.jpg">
-        </div>
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-7.jpg">
-        </div>
-        <div class="non-0">
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-3.jpg">
-        </div>
-        <div  class="non-0">
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-4.jpg">
-        </div>
-        <div  class="non-0">
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-1.jpg">
-        </div>
-        <div  class="non-0">
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-8.jpg">
-        </div>
-        <div  class="non-0">
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/restaurants/250x200/insta-6.jpg">
-        </div>
-      </div>
-      <div class="nav-con">
-        <div class="US2">
-          <h3>Need Help</h3>
-          <div class="Call">
-            <p>Call Us +(347) 123 456 789</p>
-            <p>Email Us demo@domain.com</p>
-            <p>Join our twitter @foodmart</p>
-            <p>Join our instagram @foodmart</p>
-          </div>
-        </div>
-        <div class="US2">
-          <h3>Get to Know Us</h3>
-          <div class="Call">
-             <p>About Us  </p>     
-            <p>Blog</p>
-            <p>Socialize</p>
-            <p>Foodmart</p>
-            <p>Perks</p>
-          </div>  
-        </div>
-        <div class="US2"> 
-          <h3>Let Us Help You</h3>
-          <div class="Call">
-            <p >Account Details</p>     
-            <p>Order History</p>
-            <p>Find restaurant</p>
-            <p>Login</p>
-            <p>Track order</p>
-          </div>
-        </div>
-        <div class="US2">
-          <h3>Doing Business </h3>  
-          <div class="Call">
-            <p >Suggest an Idea</p>     
-            <p>Be a Partner restaurant</p>
-            <p>Create an Account</p>
-            <p>Help</p>
-          </div>             
-        </div>
-       <div class="ima2">
-        <div>
-          <h3 class="US2">Download Apps</h3>
-        </div>
-        <div class="ima3">
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/playstore.jpg">
-        </div>
-        <div>
-          <img src="https://slidesigma.com/themes/html/foodmart//assets/img/appstore.jpg">
-        </div>
-       </div>
-       <div class="US3">
-        <div class="US2">
-          <h3>Newsletter</h3>
-        </div>
-        <input type="text" placeholder="Enter your email">
-       </div>
-      </div>
-      <div class="twi">
-        <i class="fa fa-facebook-f"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-pinterest"></i>
-        <i class="fa fa-youtube-play"></i>
-      </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const progressCircle = document.querySelector(".autoplay-progress svg");
-      const progressContent = document.querySelector(".autoplay-progress span");
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        on: {
-          autoplayTimeLeft(s, time, progress) {
-            progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-          }
-        }
-      });
-    </script>
-    <script src="app.js"></script>
-</body>
-</html>
+  );
+}
+
+export default App;
+
